@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+body {
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    padding: 50px;
+    background-color: #f5f5f5;
+    box-shadow: 0 30px 50px #bdbdbd;
+}
+#slide {
+    width: max-content;
+    margin-top: 50px;
+
+}
+.item {
+    width: 400px;
+    height: 280px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 1s;
+    background-size: 200%;
+    position: absolute;
+    z-index: 1;
+}
+.item:nth-child(1){
+    transform: translate(-150%);
+    opacity: 0;
+}
+.item:nth-child(2){
+    transform: translate(-40%);
+}
+.item:nth-child(3){
+    transform: translate(70%);
+}
+.item:nth-child(4){
+    transform: translate(180%);
+}
+.item:nth-child(n+5){
+    transform: translate(290%);
+    opacity: 0;
+}
+.item .content {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    width: 80%;
+    padding: 0 10%;
+    font-family: system-ui;
+    text-align: center;
+    box-shadow: 0 30px 50px #b9b9b9;
+    transition: 0.5s;
+    overflow: hidden;
+    max-height: 0;
+}
+.item .content .name{
+    font-family: 'Anton', sans-serif;
+}
+.item:hover .content{
+    max-height: 100px;
+}
+.item:hover{
+    background-size: 250%;
+}
+.buttons{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    transition: 0.5s;
+}
+.buttons button:hover {
+    background-color: #bac383;
+}
