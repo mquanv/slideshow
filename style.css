@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-h1 {
+h1{
     font-family: 'Anton', sans-serif;
 }
-body {
-    background-color: #eaeaea;
+body{
+    background-color:#EAEAEA;
     overflow: hidden;
 }
-.container {
+.container{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 600px;
-    padding: 50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:1000px;
+    height:600px;
+    padding:50px;
     background-color: #f5f5f5;
     box-shadow: 0 30px 50px #bdbdbd;
 }
-#slide {
-    width: max-content;
-    margin-top: 50px;
-
+#slide{
+    width:max-content;
+    margin-top:50px;
 }
-.item {
-    width: 400px;
-    height: 280px;
+.item{
+    width:400px;
+    height:280px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 1s;
@@ -34,27 +33,32 @@ body {
 }
 .item:nth-child(1){
     transform: translate(-150%);
+    background-position: 0% 50%;
     opacity: 0;
 }
 .item:nth-child(2){
     transform: translate(-40%);
+    background-position: 20% 50%;
 }
 .item:nth-child(3){
     transform: translate(70%);
+    background-position: 50% 50%;
 }
 .item:nth-child(4){
     transform: translate(180%);
+    background-position: 80% 50%;
 }
 .item:nth-child(n+5){
     transform: translate(290%);
+    background-position: 100% 50%;
     opacity: 0;
 }
-.item .content {
+.item .content{
     position: absolute;
-    top: 100%;
+    top:100%;
     background-color: #fff;
-    width: 80%;
-    padding: 0 10%;
+    width:80%;
+    padding:0 10%;
     font-family: system-ui;
     text-align: center;
     box-shadow: 0 30px 50px #b9b9b9;
@@ -73,18 +77,17 @@ body {
 }
 .buttons{
     position: absolute;
-    bottom: 40px;
-    left: 0;
+    bottom:30px;
+    left:0;
     text-align: center;
-    width: 100%;
-}
-.buttons button {
-    width: 50px;
-    height: 50px;
+    width:100%;
+}.buttons button{
+    width:50px;
+    height:50px;
     border-radius: 50%;
-    border: 1px solid #555;
+    border:1px solid #555;
     transition: 0.5s;
 }
-.buttons button:hover {
+.buttons button:hover{
     background-color: #bac383;
 }
